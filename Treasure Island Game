@@ -1,0 +1,29 @@
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.") 
+
+#https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Treasure%20Island%20Conditional.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oDe4ehjWZipYRsVfeAx2HyB7LCQ8_Fvi%26export%3Ddownload
+
+#Write your code below this line 👇
+step1 = input('You are at a T-Point, choose "left" or "right"\n')
+step1lower = step1.lower()
+
+if step1lower == "left":
+  step2 = input('You encountered a baby tiger, choose "kill" or "leave"\n')
+  step2lower = step2.lower()
+  if step2lower == "leave":
+    print("You found the Castle.")
+    step3 = input('Choose door 1, 2 or 3\n')
+    step3lower = step3.lower()
+    if step3lower == "2":
+      print("You found the biggest treasure!!\nCongratulations! You are a Billionaire now.")
+    elif step3lower == "1":
+      print("1st door is not always the correct one :)\nDoor closed itself\nYou are now in lifetime prison:(\nGame Over")
+    elif step3lower == "3":
+      print("Don't you know 3 is an unlucky number :)\nYou found a box full of poop.\nGame Over")
+    else:
+      print("Lightning killed you because god was fed up with your carelessness.")
+  else:
+    print("Mother Tigress ate every inch of you :)\nGameOver")
+
+else:
+  print("Another treasure hunter shot you in the head!\nGame Over")
